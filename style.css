@@ -78,7 +78,7 @@ a:link {
 
 
 .left-side, .right-side {
-    padding: 8vh 10vw;
+    padding: 8vh 6vw;
 }
 
 .left-side {
@@ -88,11 +88,6 @@ a:link {
     position: relative;
  
 }
-
-
-  
- 
-
 
 .header-title {
     font-size: 40px;
@@ -112,7 +107,8 @@ a:link {
   
     width: 50vw;
     line-height: 1.8;
-    color: #c5c5c5
+    color: #c5c5c5;
+    border-left: 1px solid #06f7f717;
 }
 
 .description-container p {
@@ -133,13 +129,70 @@ a:link {
 .project-item{
    
     margin: 30px 0;
-  
+    border: 1px solid #06f7f721;
+    background-color: #06f7f70a;
     padding: 10px;
     border-radius: 10px;
+    color: #c5c5c5b9;
 }
 
 .project-item img {
     width: 50px;
     height: auto;
    
+}
+
+.heart {
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #06f7f7;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    width: 100vw;
+   
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .left-side, .right-side {
+        width: 100%;
+    }
+    .left-side {
+        padding: 8vh 5vw;
+    }
+    .right-side {
+        padding: 8vh 5vw;
+    }
+    .hero-title {
+        font-size: 40px;
+    }
+    .header-title {
+        font-size: 30px;
+    }
+    .description-container p {
+        font-size: 16px;
+    }
+    .description-container span {
+        font-size: 20px;
+    }
+    .project-list h3 {
+        font-size: 20px;
+    }
+    .project-item img {
+        width: 40px;
+    }
+    .social-links img {
+        width: 25px;
+    }
+    
 }
